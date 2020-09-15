@@ -1,0 +1,51 @@
+.bg{
+    position: fixed;
+    z-index: -2;
+    background: url('https://scontent.fbom12-1.fna.fbcdn.net/v/t1.0-9/89318844_2448940015207213_5286234499397451776_o.jpg?_nc_cat=107&_nc_sid=cdbe9c&_nc_ohc=9mye8Goy0HwAX-h1P9a&_nc_oc=AQlWTJyZmaprDy-0XEXuygKcwixGRzvuah9n2hmB38VyHMjCi5kZSqe7i5J_yr_15c4&_nc_ht=scontent.fbom12-1.fna&oh=7a726f81fe10509ef12b0c5b0703b4f8&oe=5F82F29D');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.overlay{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(5, 1, 20, 0.773);
+    z-index: -1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-title{
+    font-family: 'Bebas Neue';
+    font-size: 5rem;
+    margin: 0;
+}
+
+.society-des{
+    text-align: justify;
+}
+
+.society-video {
+    margin: 20px 0;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 ratio */
+    padding-top: 25px;
+    height: 0;
+}
+.society-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

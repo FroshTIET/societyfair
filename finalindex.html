@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Society Fair</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="bg"></div>
+    <div class="overlay"></div>
+    <main class="container main-content p-2">
+        <h1 class="display-4 text-center main-title p-3 text-light">SOCIETY FAIR</h1>
+        <ul class="nav justify-content-around" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link  lead text-light active" id="all-tab" data-toggle="tab" href="#all" role="tab"
+                    aria-controls="home" aria-selected="true">All</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link  lead text-light" id="technical-tab" data-toggle="tab" href="#technical" role="tab"
+                    aria-controls="profile" aria-selected="false">Technical</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link  lead text-light" id="cultural-tab" data-toggle="tab" href="#cultural" role="tab"
+                    aria-controls="contact" aria-selected="false">Cultural</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link  lead text-light" id="welfare-tab" data-toggle="tab" href="#welfare" role="tab"
+                    aria-controls="contact" aria-selected="false">Society And Welfare</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link  lead text-light" id="multi-tab" data-toggle="tab" href="#multi" role="tab"
+                    aria-controls="contact" aria-selected="false">Multifarious</a>
+            </li>
+            <!-- <li class="nav-item" role="presentation">
+              <a class="nav-link  lead text-light" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Misc</a>
+            </li> -->
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                <div class="row">
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/thapar-mun-society.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/zzsZbUj.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Thapar MUN Society</div>
+                                <div class="scard-cat">Cultural</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/fine-arts-and-photography-society.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/z0FzxPs.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Fine Arts and Photography society</div>
+                                <div class="scard-cat">Cultural</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/thapar-toastmasters-club.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/YODK2p0.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Thapar Toastmasters Club</div>
+                                <div class="scard-cat">Cultural</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/iete-students-forum.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/VOx6rm2.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">IETE Students' Forum</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/owasp-thapar-student-chapter.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/v2K908O.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Owasp Thapar Student Chapter</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/team-oorja.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/UufhNFk.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Team Oorja</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/entrepreneurship-development-cell.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/ukGX0gs.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Entrepreneurship Development Cell</div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/econ-club.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/ubxI2p3.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Econ Club</div>
+                                <div class="scard-cat">Multifarious</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/enactus-thapar.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/U6aItbm.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Enactus Thapar</div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/virsa-the-essence-of-punjab.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/T4liQkP.jpg" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">VIRSA - THE ESSENCE OF PUNJAB</div>
+                                <div class="scard-cat">Cultural</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/thapar-acm-student-chapter.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/S7g5eCl.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Thapar ACM Student Chapter</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/thapar-food-festival.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/Riwj6YP.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Thapar Food Festival</div>
+                                <div class="scard-cat">Cultural</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/spicmacay-thapar-chapter.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/qHj8a3o.jpg" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">SPICMACAY THAPAR CHAPTER</div>
+                                <div class="scard-cat">Cultural</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/microsoft-student-chapter.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/p9XEGDX.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Microsoft Student Chapter</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/youth-united-patiala-chapter.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/lXcqa4J.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Youth United - Patiala Chapter</div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/rotaract-club-of-tiet.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/lQgki4F.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Rotaract Club of TIET</div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/team-ultron-motorsports.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/l50KLai.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Team Ultron Motorsports</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/aiesec.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/Kn17eW8.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">AIESEC </div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/student-alumni-interaction-cell-saic.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/Icf9buv.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Student Alumni Interaction Cell (SAIC)</div>
+                                <div class="scard-cat">Multifarious</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/iaeste-ci-tiet.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/h2I5gzT.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">IAESTE CI-TIET</div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/girlup-tiet.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/gLEc5uK.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">GirlUp TIET</div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/creative-computing-society.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/FP72qVM.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Creative Computing Society</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/nox-the-western-dance-society.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/fc7rotS.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">NOX - The western dance society</div>
+                                <div class="scard-cat">Cultural</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/thapar-adventure-club.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/EWeoNcs.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Thapar Adventure Club</div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/echoes-club.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/CEjGjfh.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Echoes Club</div>
+                                <div class="scard-cat">Multifarious</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/linux-user-group.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/BSc1jAc.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Linux User Group</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/paryavaran-welfare-society.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/bAS3fea.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Paryavaran Welfare Society</div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/literary-society.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/aVxTwrq.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Literary Society</div>
+                                <div class="scard-cat">Multifarious</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/thapar-amateur-astronomers-society-taas.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/Ac1x5Vt.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Thapar Amateur Astronomers Society -TAAS</div>
+                                <div class="scard-cat">Multifarious</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/team-fateh.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/6WvVlVF.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Team Fateh</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/mudra-society-tiet.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/6Wux0FY.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">MUDRA SOCIETY TIET</div>
+                                <div class="scard-cat">Cultural</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/thapar-movie-club.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/2UIfw78.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Thapar Movie Club</div>
+                                <div class="scard-cat">Cultural</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/lead.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/2joQkKY.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">LEAD</div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/thapar-society-of-civil-engineers.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/2eym8E8.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Thapar Society Of Civil Engineers</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/pratigya-abhiyan.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/2EgXIyF.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Pratigya Abhiyan</div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="technical" role="tabpanel" aria-labelledby="technical-tab">
+                <div class="row">
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/iete-students-forum.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/VOx6rm2.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">IETE Students' Forum</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/owasp-thapar-student-chapter.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/v2K908O.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Owasp Thapar Student Chapter</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/team-oorja.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/UufhNFk.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Team Oorja</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/thapar-acm-student-chapter.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/S7g5eCl.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Thapar ACM Student Chapter</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/microsoft-student-chapter.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/p9XEGDX.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Microsoft Student Chapter</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/team-ultron-motorsports.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/l50KLai.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Team Ultron Motorsports</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/creative-computing-society.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/FP72qVM.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Creative Computing Society</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/linux-user-group.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/BSc1jAc.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Linux User Group</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/team-fateh.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/6WvVlVF.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Team Fateh</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/thapar-society-of-civil-engineers.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/2eym8E8.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Thapar Society Of Civil Engineers</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="cultural" role="tabpanel" aria-labelledby="cultural-tab">
+                <div class="row">
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/thapar-mun-society.html'" >
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/zzsZbUj.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Thapar MUN Society</div>
+                                <div class="scard-cat">Cultural</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/fine-arts-and-photography-society.html'" >
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/z0FzxPs.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Fine Arts and Photography society</div>
+                                <div class="scard-cat">Cultural</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/thapar-toastmasters-club.html'" >
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/YODK2p0.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Thapar Toastmasters Club</div>
+                                <div class="scard-cat">Cultural</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/virsa-the-essence-of-punjab.html'" >
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/T4liQkP.jpg" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">VIRSA - THE ESSENCE OF PUNJAB</div>
+                                <div class="scard-cat">Cultural</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/thapar-food-festival.html'" >
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/Riwj6YP.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Thapar Food Festival</div>
+                                <div class="scard-cat">Cultural</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/spicmacay-thapar-chapter.html'" >
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/qHj8a3o.jpg" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">SPICMACAY THAPAR CHAPTER</div>
+                                <div class="scard-cat">Cultural</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/nox-the-western-dance-society.html'" >
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/fc7rotS.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">NOX - The western dance society</div>
+                                <div class="scard-cat">Cultural</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/mudra-society-tiet.html'" >
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/6Wux0FY.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">MUDRA SOCIETY TIET</div>
+                                <div class="scard-cat">Cultural</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/thapar-movie-club.html'" >
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/2UIfw78.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Thapar Movie Club</div>
+                                <div class="scard-cat">Cultural</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="welfare" role="tabpanel" aria-labelledby="welfare-tab">
+                <div class="row">
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/entrepreneurship-development-cell.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/ukGX0gs.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Entrepreneurship Development Cell</div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/enactus-thapar.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/U6aItbm.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Enactus Thapar</div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/youth-united-patiala-chapter.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/lXcqa4J.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Youth United - Patiala Chapter</div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/rotaract-club-of-tiet.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/lQgki4F.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Rotaract Club of TIET</div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/aiesec.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/Kn17eW8.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">AIESEC </div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/iaeste-ci-tiet.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/h2I5gzT.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">IAESTE CI-TIET</div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/girlup-tiet.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/gLEc5uK.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">GirlUp TIET</div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/thapar-adventure-club.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/EWeoNcs.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Thapar Adventure Club</div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/paryavaran-welfare-society.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/bAS3fea.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Paryavaran Welfare Society</div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/lead.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/2joQkKY.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">LEAD</div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/pratigya-abhiyan.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/2EgXIyF.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Pratigya Abhiyan</div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="multi" role="tabpanel" aria-labelledby="multi-tab">
+                <div class="row">
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/econ-club.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/ubxI2p3.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Econ Club</div>
+                                <div class="scard-cat">Multifarious</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/student-alumni-interaction-cell-saic.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/Icf9buv.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Student Alumni Interaction Cell (SAIC)</div>
+                                <div class="scard-cat">Multifarious</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/echoes-club.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/CEjGjfh.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Echoes Club</div>
+                                <div class="scard-cat">Multifarious</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/literary-society.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/aVxTwrq.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Literary Society</div>
+                                <div class="scard-cat">Multifarious</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='/core/static/thapar-amateur-astronomers-society-taas.html'">
+                            <div class="scard-logo">
+                                <img src="https://i.imgur.com/Ac1x5Vt.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Thapar Amateur Astronomers Society -TAAS</div>
+                                <div class="scard-cat">Multifarious</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+        <div class="container-fluid">
+
+        </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

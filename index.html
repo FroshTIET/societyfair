@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Society Fair</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="bg"></div>
+    <div class="overlay"></div>
+    <main class="container main-content p-2">
+        <h1 class="display-4 text-center main-title p-3 text-light">SOCIETY FAIR</h1>
+        <ul class="nav justify-content-around" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link  lead text-light active" id="all-tab" data-toggle="tab" href="#all" role="tab"
+                    aria-controls="home" aria-selected="true">All</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link  lead text-light" id="technical-tab" data-toggle="tab" href="#technical" role="tab"
+                    aria-controls="profile" aria-selected="false">Technical</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link  lead text-light" id="cultural-tab" data-toggle="tab" href="#cultural" role="tab"
+                    aria-controls="contact" aria-selected="false">Cultural</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link  lead text-light" id="welfare-tab" data-toggle="tab" href="#welfare" role="tab"
+                    aria-controls="contact" aria-selected="false">Society And Welfare</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link  lead text-light" id="multi-tab" data-toggle="tab" href="#multi" role="tab"
+                    aria-controls="contact" aria-selected="false">Multifarious</a>
+            </li>
+            <!-- <li class="nav-item" role="presentation">
+              <a class="nav-link  lead text-light" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Misc</a>
+            </li> -->
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                <div class="row">
+                    {% for row in alllist %}
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='{{ row.link }}'">
+                            <div class="scard-logo">
+                                <img src="{{ row.picture }}" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">{{ row.title }}</div>
+                                <div class="scard-cat">{{ row.category }}</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="technical" role="tabpanel" aria-labelledby="technical-tab">
+                <div class="row">
+                    {% for row in technicallist %}
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='{{ row.link }}'">
+                            <div class="scard-logo">
+                                <img src="{{ row.picture }}" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">{{ row.title }}</div>
+                                <div class="scard-cat">{{ row.category }}</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="cultural" role="tabpanel" aria-labelledby="cultural-tab">
+                <div class="row">
+                    {% for row in culturallist %}
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='{{ row.link }}'" >
+                            <div class="scard-logo">
+                                <img src="{{ row.picture }}" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">{{ row.title }}</div>
+                                <div class="scard-cat">{{ row.category }}</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="welfare" role="tabpanel" aria-labelledby="welfare-tab">
+                <div class="row">
+                    {% for row in welfarelist %}
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='{{ row.link }}'">
+                            <div class="scard-logo">
+                                <img src="{{ row.picture }}" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">{{ row.title }}</div>
+                                <div class="scard-cat">{{ row.category }}</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="multi" role="tabpanel" aria-labelledby="multi-tab">
+                <div class="row">
+                    {% for row in multilist %}
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard" onclick="window.location='{{ row.link }}'">
+                            <div class="scard-logo">
+                                <img src="{{ row.picture }}" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">{{ row.title }}</div>
+                                <div class="scard-cat">{{ row.category }}</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+
+            </div>
+        </div>
+        <div class="container-fluid">
+
+        </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
