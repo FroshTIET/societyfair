@@ -48,7 +48,7 @@
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
                 <div class="row">
-                    {% for row in alllist %}
+                    {% for row in alllist | sort(attribute='title') %}
                     <div class="col-12 col-lg-4 p-2 col-md-6">
                         <div class="scard" onclick="window.location='{{ row.link }}'">
                             <div class="scard-logo">
@@ -68,7 +68,7 @@
             </div>
             <div class="tab-pane fade" id="technical" role="tabpanel" aria-labelledby="technical-tab">
                 <div class="row">
-                    {% for row in technicallist %}
+                    {% for row in technicallist | sort(attribute='title') %}
                     <div class="col-12 col-lg-4 p-2 col-md-6">
                         <div class="scard" onclick="window.location='{{ row.link }}'">
                             <div class="scard-logo">
@@ -88,7 +88,7 @@
             </div>
             <div class="tab-pane fade" id="cultural" role="tabpanel" aria-labelledby="cultural-tab">
                 <div class="row">
-                    {% for row in culturallist %}
+                    {% for row in culturallist | sort(attribute='title') %}
                     <div class="col-12 col-lg-4 p-2 col-md-6">
                         <div class="scard" onclick="window.location='{{ row.link }}'" >
                             <div class="scard-logo">
@@ -107,7 +107,7 @@
             </div>
             <div class="tab-pane fade" id="welfare" role="tabpanel" aria-labelledby="welfare-tab">
                 <div class="row">
-                    {% for row in welfarelist %}
+                    {% for row in welfarelist | sort(attribute='title') %}
                     <div class="col-12 col-lg-4 p-2 col-md-6">
                         <div class="scard" onclick="window.location='{{ row.link }}'">
                             <div class="scard-logo">
@@ -126,7 +126,7 @@
             </div>
             <div class="tab-pane fade" id="multi" role="tabpanel" aria-labelledby="multi-tab">
                 <div class="row">
-                    {% for row in multilist %}
+                    {% for row in multilist | sort(attribute='title') %}
                     <div class="col-12 col-lg-4 p-2 col-md-6">
                         <div class="scard" onclick="window.location='{{ row.link }}'">
                             <div class="scard-logo">
