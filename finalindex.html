@@ -16,13 +16,21 @@
 </head>
 
 <body>
+    <div class="alert alert-primary fixed-top" role="alert">
+        The society fair has officially ended,
+        <strong>Frosh</strong> will be taking doubts for the next 15 minutes
+      </div>
     <div class="bg"></div>
     <div class="overlay"></div>
     <main class="container main-content p-2">
-        <h1 class="display-4 text-center main-title p-3 text-light">SOCIETY FAIR</h1>
+        <h1 class="display-4 text-center main-title p-3 m-4 text-light">SOCIETY FAIR</h1>
         <ul class="nav justify-content-around" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-                <a class="nav-link  lead text-light active" id="all-tab" data-toggle="tab" href="#all" role="tab"
+                <a class="nav-link  lead text-light active" id="all-tab" data-toggle="tab" href="#doubts" role="tab"
+                    aria-controls="home" aria-selected="true">Doubts</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link  lead text-light" id="all-tab" data-toggle="tab" href="#all" role="tab"
                     aria-controls="home" aria-selected="true">All</a>
             </li>
             <li class="nav-item" role="presentation">
@@ -46,139 +54,8 @@
             </li> -->
         </ul>
         <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+            <div class="tab-pane fade show active" id="doubts" role="tabpanel" aria-labelledby="doubts-tab">
                 <div class="row">
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/acm-student-chapter.html'">
-                            <div class="scard-logo">
-                                <img src="assets/acm.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">ACM Student Chapter</div>
-                                <div class="scard-cat">Technical</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/aiche-tiet-student-chapter.html'">
-                            <div class="scard-logo">
-                                <img src="assets/aiche.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">AIChE TIET Student Chapter</div>
-                                <div class="scard-cat">Technical</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/aiesec.html'">
-                            <div class="scard-logo">
-                                <img src="assets/aisec.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">AIESEC </div>
-                                <div class="scard-cat">Welfare</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/creative-computing-society.html'">
-                            <div class="scard-logo">
-                                <img src="assets/ccs.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">Creative Computing Society</div>
-                                <div class="scard-cat">Technical</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/dsc-tiet.html'">
-                            <div class="scard-logo">
-                                <img src="assets/dsc.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">DSC TIET</div>
-                                <div class="scard-cat">Technical</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/echoes-club.html'">
-                            <div class="scard-logo">
-                                <img src="assets/echoes.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">Echoes Club</div>
-                                <div class="scard-cat">Multifarious</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/econ-club.html'">
-                            <div class="scard-logo">
-                                <img src="assets/econ.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">Econ Club</div>
-                                <div class="scard-cat">Multifarious</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/enactus-thapar.html'">
-                            <div class="scard-logo">
-                                <img src="assets/enactus.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">Enactus Thapar</div>
-                                <div class="scard-cat">Welfare</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/entrepreneurship-development-cell.html'">
-                            <div class="scard-logo">
-                                <img src="assets/edc.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">Entrepreneurship Development Cell</div>
-                                <div class="scard-cat">Welfare</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/fine-arts-and-photography-society.html'">
-                            <div class="scard-logo">
-                                <img src="assets/faps.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">Fine Arts and Photography society</div>
-                                <div class="scard-cat">Cultural</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
                     <div class="col-12 col-lg-4 p-2 col-md-6">
                         <div class="scard" onclick="window.location='/core/static/frosh.html'">
                             <div class="scard-logo">
@@ -191,510 +68,14 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/genders-champion-club.html'">
-                            <div class="scard-logo">
-                                <img src="assets/genderchampion.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">Genders Champion Club</div>
-                                <div class="scard-cat">Welfare</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/girlup-tiet.html'">
-                            <div class="scard-logo">
-                                <img src="assets/girluptiet.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">GirlUp TIET</div>
-                                <div class="scard-cat">Welfare</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/iaeste-ci-tiet.html'">
-                            <div class="scard-logo">
-                                <img src="assets/IAESTE.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">IAESTE CI-TIET</div>
-                                <div class="scard-cat">Welfare</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/iei-thapar-students-chapter.html'">
-                            <div class="scard-logo">
-                                <img src="assets/instituteofengineers.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">IEI Thapar Students' Chapter</div>
-                                <div class="scard-cat">Technical</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/iete-students-forum.html'">
-                            <div class="scard-logo">
-                                <img src="assets/iete.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">IETE Students' Forum</div>
-                                <div class="scard-cat">Technical</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/iiche.html'">
-                            <div class="scard-logo">
-                                <img src="assets/iiche.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">IICHE</div>
-                                <div class="scard-cat">Technical</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/institutions-innovation-council-iic.html'">
-                            <div class="scard-logo">
-                                <img src="assets/innovationcouncil.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">Institutions' Innovation Council (IIC)</div>
-                                <div class="scard-cat">Welfare</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/iste.html'">
-                            <div class="scard-logo">
-                                <img src="assets/istelogo.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">ISTE</div>
-                                <div class="scard-cat">Technical</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/lead.html'">
-                            <div class="scard-logo">
-                                <img src="assets/lead.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">LEAD</div>
-                                <div class="scard-cat">Technical</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/linux-user-group.html'">
-                            <div class="scard-logo">
-                                <img src="assets/lug.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">Linux User Group</div>
-                                <div class="scard-cat">Technical</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/literary-society.html'">
-                            <div class="scard-logo">
-                                <img src="assets/literary.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">Literary Society</div>
-                                <div class="scard-cat">Cultural</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/mechatronics-and-robotics-society.html'">
-                            <div class="scard-logo">
-                                <img src="assets/mars.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">Mechatronics and Robotics Society</div>
-                                <div class="scard-cat">Technical</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/microsoft-student-chapter.html'">
-                            <div class="scard-logo">
-                                <img src="assets/msc.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">Microsoft Student Chapter</div>
-                                <div class="scard-cat">Technical</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/mudra-society-tiet.html'">
-                            <div class="scard-logo">
-                                <img src="assets/mudra.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">MUDRA SOCIETY TIET</div>
-                                <div class="scard-cat">Cultural</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/nox-the-western-dance-society.html'">
-                            <div class="scard-logo">
-                                <img src="assets/nox.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">NOX - The western dance society</div>
-                                <div class="scard-cat">Cultural</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/orion-techfest.html'">
-                            <div class="scard-logo">
-                                <img src="assets/orion.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">Orion TechFest</div>
-                                <div class="scard-cat">Technical</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/owasp-thapar-student-chapter.html'">
-                            <div class="scard-logo">
-                                <img src="assets/owasp.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">Owasp Thapar Student Chapter</div>
-                                <div class="scard-cat">Technical</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/paryavaran-welfare-society.html'">
-                            <div class="scard-logo">
-                                <img src="assets/paryawaran.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">Paryavaran Welfare Society</div>
-                                <div class="scard-cat">Welfare</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/pratigya-abhiyan.html'">
-                            <div class="scard-logo">
-                                <img src="assets/pratigya.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">Pratigya Abhiyan</div>
-                                <div class="scard-cat">Welfare</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/rotaract-club-of-tiet.html'">
-                            <div class="scard-logo">
-                                <img src="assets/rotaryclub.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">Rotaract Club of TIET</div>
-                                <div class="scard-cat">Welfare</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/society-of-mechanical-and-industrial-engineerssomie.html'">
-                            <div class="scard-logo">
-                                <img src="assets/somie.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">Society of Mechanical and Industrial Engineers(SOMIE)</div>
-                                <div class="scard-cat">Technical</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/spicmacay-thapar-chapter.html'">
-                            <div class="scard-logo">
-                                <img src="assets/spicmacay.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">SPICMACAY THAPAR CHAPTER</div>
-                                <div class="scard-cat">Cultural</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/student-alumni-interaction-cell-saic.html'">
-                            <div class="scard-logo">
-                                <img src="assets/SAIC.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">Student Alumni Interaction Cell (SAIC)</div>
-                                <div class="scard-cat">Multifarious</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/team-fateh.html'">
-                            <div class="scard-logo">
-                                <img src="assets/fateh.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">Team Fateh</div>
-                                <div class="scard-cat">Technical</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/team-oorja.html'">
-                            <div class="scard-logo">
-                                <img src="assets/oorja.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">Team Oorja</div>
-                                <div class="scard-cat">Technical</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/team-ultron-motorsports.html'">
-                            <div class="scard-logo">
-                                <img src="assets/ultron.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">Team Ultron Motorsports</div>
-                                <div class="scard-cat">Technical</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/tedx-tiet.html'">
-                            <div class="scard-logo">
-                                <img src="assets/tedx.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">TEDx TIET</div>
-                                <div class="scard-cat">Multifarious</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/thapar-adventure-club.html'">
-                            <div class="scard-logo">
-                                <img src="assets/adventure.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">Thapar Adventure Club</div>
-                                <div class="scard-cat">Welfare</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/thapar-amateur-astronomers-society-taas.html'">
-                            <div class="scard-logo">
-                                <img src="assets/astronomy.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">Thapar Amateur Astronomers Society -TAAS</div>
-                                <div class="scard-cat">Multifarious</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/thapar-food-festival.html'">
-                            <div class="scard-logo">
-                                <img src="assets/tff.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">Thapar Food Festival</div>
-                                <div class="scard-cat">Cultural</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/thapar-mathematical-society.html'">
-                            <div class="scard-logo">
-                                <img src="assets/tms.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">Thapar Mathematical Society</div>
-                                <div class="scard-cat">Technical</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/thapar-movie-club.html'">
-                            <div class="scard-logo">
-                                <img src="assets/thaparmovieclub.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">Thapar Movie Club</div>
-                                <div class="scard-cat">Cultural</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/thapar-mun-society.html'">
-                            <div class="scard-logo">
-                                <img src="assets/mun.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">Thapar MUN Society</div>
-                                <div class="scard-cat">Cultural</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/thapar-society-of-civil-engineers.html'">
-                            <div class="scard-logo">
-                                <img src="assets/civil.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">Thapar Society Of Civil Engineers</div>
-                                <div class="scard-cat">Technical</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/thapar-toastmasters-club.html'">
-                            <div class="scard-logo">
-                                <img src="assets/toastmasters.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">Thapar Toastmasters Club</div>
-                                <div class="scard-cat">Multifarious</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/virsa-the-essence-of-punjab.html'">
-                            <div class="scard-logo">
-                                <img src="assets/virsa.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">VIRSA - THE ESSENCE OF PUNJAB</div>
-                                <div class="scard-cat">Cultural</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/youth-united-patiala-chapter.html'">
-                            <div class="scard-logo">
-                                <img src="assets/youthunited.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">Youth United - Patiala Chapter</div>
-                                <div class="scard-cat">Welfare</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/youth-welfare-club-ywc.html'">
-                            <div class="scard-logo">
-                                <img src="assets/ywc.png" alt="">
-                            </div>
-                            <div class="scard-content">
-                                <div class="scard-title">Youth Welfare Club (YWC)</div>
-                                <div class="scard-cat">Welfare</div>
-                            </div>
-                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    
-
                 </div>
 
             </div>
-            <div class="tab-pane fade" id="technical" role="tabpanel" aria-labelledby="technical-tab">
+            <div class="tab-pane fade" id="all" role="tabpanel" aria-labelledby="all-tab">
                 <div class="row">
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/acm-student-chapter.html'">
+                        <div class="scard">
                             <div class="scard-logo">
                                 <img src="assets/acm.png" alt="">
                             </div>
@@ -705,9 +86,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/aiche-tiet-student-chapter.html'">
+                        <div class="scard"html'">
                             <div class="scard-logo">
                                 <img src="assets/aiche.png" alt="">
                             </div>
@@ -718,9 +99,22 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/creative-computing-society.html'">
+                        <div class="scard">
+                            <div class="scard-logo">
+                                <img src="assets/aisec.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">AIESEC </div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard"html'">
                             <div class="scard-logo">
                                 <img src="assets/ccs.png" alt="">
                             </div>
@@ -731,9 +125,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/dsc-tiet.html'">
+                        <div class="scard">
                             <div class="scard-logo">
                                 <img src="assets/dsc.png" alt="">
                             </div>
@@ -744,9 +138,128 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/iei-thapar-students-chapter.html'">
+                        <div class="scard">
+                            <div class="scard-logo">
+                                <img src="assets/echoes.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Echoes Club</div>
+                                <div class="scard-cat">Multifarious</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard">
+                            <div class="scard-logo">
+                                <img src="assets/econ.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Econ Club</div>
+                                <div class="scard-cat">Multifarious</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard">
+                            <div class="scard-logo">
+                                <img src="assets/enactus.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Enactus Thapar</div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard"
+                        neurship-development-cell.html'">
+                            <div class="scard-logo">
+                                <img src="assets/edc.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Entrepreneurship Development Cell</div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard"
+                        s-and-photography-society.html'">
+                            <div class="scard-logo">
+                                <img src="assets/faps.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Fine Arts and Photography society</div>
+                                <div class="scard-cat">Cultural</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard">
+                            <div class="scard-logo">
+                                <img src="assets/frosh.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">FROSH</div>
+                                <div class="scard-cat">Cultural</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard"">
+                            <div class="scard-logo">
+                                <img src="assets/genderchampion.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Genders Champion Club</div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard">
+                            <div class="scard-logo">
+                                <img src="assets/girluptiet.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">GirlUp TIET</div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard">
+                            <div class="scard-logo">
+                                <img src="assets/IAESTE.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">IAESTE CI-TIET</div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard".html'">
                             <div class="scard-logo">
                                 <img src="assets/instituteofengineers.png" alt="">
                             </div>
@@ -757,9 +270,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/iete-students-forum.html'">
+                        <div class="scard">
                             <div class="scard-logo">
                                 <img src="assets/iete.png" alt="">
                             </div>
@@ -770,9 +283,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/iiche.html'">
+                        <div class="scard">
                             <div class="scard-logo">
                                 <img src="assets/iiche.png" alt="">
                             </div>
@@ -783,8 +296,528 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                                        <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/iste.html'">
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard"
+                        ions-innovation-council-iic.html'">
+                            <div class="scard-logo">
+                                <img src="assets/innovationcouncil.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Institutions' Innovation Council (IIC)</div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard">
+                            <div class="scard-logo">
+                                <img src="assets/istelogo.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">ISTE</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard">
+                            <div class="scard-logo">
+                                <img src="assets/lead.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">LEAD</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard">
+                            <div class="scard-logo">
+                                <img src="assets/lug.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Linux User Group</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard">
+                            <div class="scard-logo">
+                                <img src="assets/literary.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Literary Society</div>
+                                <div class="scard-cat">Cultural</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard"
+                        nics-and-robotics-society.html'">
+                            <div class="scard-logo">
+                                <img src="assets/mars.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Mechatronics and Robotics Society</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard"tml'">
+                            <div class="scard-logo">
+                                <img src="assets/msc.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Microsoft Student Chapter</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard">
+                            <div class="scard-logo">
+                                <img src="assets/mudra.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">MUDRA SOCIETY TIET</div>
+                                <div class="scard-cat">Cultural</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard"ty.html'">
+                            <div class="scard-logo">
+                                <img src="assets/nox.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">NOX - The western dance society</div>
+                                <div class="scard-cat">Cultural</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard">
+                            <div class="scard-logo">
+                                <img src="assets/orion.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Orion TechFest</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard"r.html'">
+                            <div class="scard-logo">
+                                <img src="assets/owasp.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Owasp Thapar Student Chapter</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard"html'">
+                            <div class="scard-logo">
+                                <img src="assets/paryawaran.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Paryavaran Welfare Society</div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard">
+                            <div class="scard-logo">
+                                <img src="assets/pratigya.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Pratigya Abhiyan</div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard"">
+                            <div class="scard-logo">
+                                <img src="assets/rotaryclub.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Rotaract Club of TIET</div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard"
+                        of-mechanical-and-industrial-engineerssomie.html'">
+                            <div class="scard-logo">
+                                <img src="assets/somie.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Society of Mechanical and Industrial Engineers(SOMIE)</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard"ml'">
+                            <div class="scard-logo">
+                                <img src="assets/spicmacay.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">SPICMACAY THAPAR CHAPTER</div>
+                                <div class="scard-cat">Cultural</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard"
+                        alumni-interaction-cell-saic.html'">
+                            <div class="scard-logo">
+                                <img src="assets/SAIC.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Student Alumni Interaction Cell (SAIC)</div>
+                                <div class="scard-cat">Multifarious</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard">
+                            <div class="scard-logo">
+                                <img src="assets/fateh.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Team Fateh</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard">
+                            <div class="scard-logo">
+                                <img src="assets/oorja.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Team Oorja</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard"l'">
+                            <div class="scard-logo">
+                                <img src="assets/ultron.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Team Ultron Motorsports</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard">
+                            <div class="scard-logo">
+                                <img src="assets/tedx.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">TEDx TIET</div>
+                                <div class="scard-cat">Multifarious</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard"">
+                            <div class="scard-logo">
+                                <img src="assets/adventure.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Thapar Adventure Club</div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard"
+                        mateur-astronomers-society-taas.html'">
+                            <div class="scard-logo">
+                                <img src="assets/astronomy.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Thapar Amateur Astronomers Society -TAAS</div>
+                                <div class="scard-cat">Multifarious</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard">
+                            <div class="scard-logo">
+                                <img src="assets/tff.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Thapar Food Festival</div>
+                                <div class="scard-cat">Cultural</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard".html'">
+                            <div class="scard-logo">
+                                <img src="assets/tms.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Thapar Mathematical Society</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard">
+                            <div class="scard-logo">
+                                <img src="assets/thaparmovieclub.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Thapar Movie Club</div>
+                                <div class="scard-cat">Cultural</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard">
+                            <div class="scard-logo">
+                                <img src="assets/mun.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Thapar MUN Society</div>
+                                <div class="scard-cat">Cultural</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard"
+                        ociety-of-civil-engineers.html'">
+                            <div class="scard-logo">
+                                <img src="assets/civil.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Thapar Society Of Civil Engineers</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard"ml'">
+                            <div class="scard-logo">
+                                <img src="assets/toastmasters.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Thapar Toastmasters Club</div>
+                                <div class="scard-cat">Multifarious</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard".html'">
+                            <div class="scard-logo">
+                                <img src="assets/virsa.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">VIRSA - THE ESSENCE OF PUNJAB</div>
+                                <div class="scard-cat">Cultural</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard"r.html'">
+                            <div class="scard-logo">
+                                <img src="assets/youthunited.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Youth United - Patiala Chapter</div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard"'">
+                            <div class="scard-logo">
+                                <img src="assets/ywc.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Youth Welfare Club (YWC)</div>
+                                <div class="scard-cat">Welfare</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="technical" role="tabpanel" aria-labelledby="technical-tab">
+                <div class="row">
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard">
+                            <div class="scard-logo">
+                                <img src="assets/acm.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">ACM Student Chapter</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard"html'">
+                            <div class="scard-logo">
+                                <img src="assets/aiche.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">AIChE TIET Student Chapter</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard"html'">
+                            <div class="scard-logo">
+                                <img src="assets/ccs.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">Creative Computing Society</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard">
+                            <div class="scard-logo">
+                                <img src="assets/dsc.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">DSC TIET</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard".html'">
+                            <div class="scard-logo">
+                                <img src="assets/instituteofengineers.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">IEI Thapar Students' Chapter</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard">
+                            <div class="scard-logo">
+                                <img src="assets/iete.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">IETE Students' Forum</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard">
+                            <div class="scard-logo">
+                                <img src="assets/iiche.png" alt="">
+                            </div>
+                            <div class="scard-content">
+                                <div class="scard-title">IICHE</div>
+                                <div class="scard-cat">Technical</div>
+                            </div>
+                            <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 p-2 col-md-6">
+                        <div class="scard">
                             <div class="scard-logo">
                                 <img src="assets/istelogo.png" alt="">
                             </div>
@@ -796,7 +829,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/lead.html'">
+                        <div class="scard">
                             <div class="scard-logo">
                                 <img src="assets/lead.png" alt="">
                             </div>
@@ -807,9 +840,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/linux-user-group.html'">
+                        <div class="scard">
                             <div class="scard-logo">
                                 <img src="assets/lug.png" alt="">
                             </div>
@@ -820,9 +853,10 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/mechatronics-and-robotics-society.html'">
+                        <div class="scard"
+                        nics-and-robotics-society.html'">
                             <div class="scard-logo">
                                 <img src="assets/mars.png" alt="">
                             </div>
@@ -833,9 +867,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/microsoft-student-chapter.html'">
+                        <div class="scard"tml'">
                             <div class="scard-logo">
                                 <img src="assets/msc.png" alt="">
                             </div>
@@ -846,9 +880,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/orion-techfest.html'">
+                        <div class="scard">
                             <div class="scard-logo">
                                 <img src="assets/orion.png" alt="">
                             </div>
@@ -859,9 +893,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/owasp-thapar-student-chapter.html'">
+                        <div class="scard"r.html'">
                             <div class="scard-logo">
                                 <img src="assets/owasp.png" alt="">
                             </div>
@@ -872,9 +906,10 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/society-of-mechanical-and-industrial-engineerssomie.html'">
+                        <div class="scard"
+                        of-mechanical-and-industrial-engineerssomie.html'">
                             <div class="scard-logo">
                                 <img src="assets/somie.png" alt="">
                             </div>
@@ -885,9 +920,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/team-fateh.html'">
+                        <div class="scard">
                             <div class="scard-logo">
                                 <img src="assets/fateh.png" alt="">
                             </div>
@@ -898,9 +933,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/team-oorja.html'">
+                        <div class="scard">
                             <div class="scard-logo">
                                 <img src="assets/oorja.png" alt="">
                             </div>
@@ -911,9 +946,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/team-ultron-motorsports.html'">
+                        <div class="scard"l'">
                             <div class="scard-logo">
                                 <img src="assets/ultron.png" alt="">
                             </div>
@@ -924,9 +959,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/thapar-mathematical-society.html'">
+                        <div class="scard".html'">
                             <div class="scard-logo">
                                 <img src="assets/tms.png" alt="">
                             </div>
@@ -937,9 +972,10 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/thapar-society-of-civil-engineers.html'">
+                        <div class="scard"
+                        ociety-of-civil-engineers.html'">
                             <div class="scard-logo">
                                 <img src="assets/civil.png" alt="">
                             </div>
@@ -950,16 +986,17 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
 
                 </div>
 
             </div>
             <div class="tab-pane fade" id="cultural" role="tabpanel" aria-labelledby="cultural-tab">
                 <div class="row">
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/fine-arts-and-photography-society.html'" >
+                        <div class="scard"
+                        s-and-photography-society.html'">
                             <div class="scard-logo">
                                 <img src="assets/faps.png" alt="">
                             </div>
@@ -970,9 +1007,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/frosh.html'" >
+                        <div class="scard">
                             <div class="scard-logo">
                                 <img src="assets/frosh.png" alt="">
                             </div>
@@ -983,9 +1020,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/literary-society.html'" >
+                        <div class="scard">
                             <div class="scard-logo">
                                 <img src="assets/literary.png" alt="">
                             </div>
@@ -996,9 +1033,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/mudra-society-tiet.html'" >
+                        <div class="scard">
                             <div class="scard-logo">
                                 <img src="assets/mudra.png" alt="">
                             </div>
@@ -1009,9 +1046,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/nox-the-western-dance-society.html'" >
+                        <div class="scard"ty.html'">
                             <div class="scard-logo">
                                 <img src="assets/nox.png" alt="">
                             </div>
@@ -1022,9 +1059,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/spicmacay-thapar-chapter.html'" >
+                        <div class="scard"ml'">
                             <div class="scard-logo">
                                 <img src="assets/spicmacay.png" alt="">
                             </div>
@@ -1035,9 +1072,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/thapar-food-festival.html'" >
+                        <div class="scard">
                             <div class="scard-logo">
                                 <img src="assets/tff.png" alt="">
                             </div>
@@ -1048,9 +1085,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/thapar-movie-club.html'" >
+                        <div class="scard">
                             <div class="scard-logo">
                                 <img src="assets/thaparmovieclub.png" alt="">
                             </div>
@@ -1061,9 +1098,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/thapar-mun-society.html'" >
+                        <div class="scard">
                             <div class="scard-logo">
                                 <img src="assets/mun.png" alt="">
                             </div>
@@ -1074,9 +1111,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/virsa-the-essence-of-punjab.html'" >
+                        <div class="scard".html'">
                             <div class="scard-logo">
                                 <img src="assets/virsa.png" alt="">
                             </div>
@@ -1087,15 +1124,15 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                 </div>
 
             </div>
             <div class="tab-pane fade" id="welfare" role="tabpanel" aria-labelledby="welfare-tab">
                 <div class="row">
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/aiesec.html'">
+                        <div class="scard">
                             <div class="scard-logo">
                                 <img src="assets/aisec.png" alt="">
                             </div>
@@ -1106,9 +1143,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/enactus-thapar.html'">
+                        <div class="scard">
                             <div class="scard-logo">
                                 <img src="assets/enactus.png" alt="">
                             </div>
@@ -1119,9 +1156,10 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/entrepreneurship-development-cell.html'">
+                        <div class="scard"
+                        neurship-development-cell.html'">
                             <div class="scard-logo">
                                 <img src="assets/edc.png" alt="">
                             </div>
@@ -1132,9 +1170,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/genders-champion-club.html'">
+                        <div class="scard"">
                             <div class="scard-logo">
                                 <img src="assets/genderchampion.png" alt="">
                             </div>
@@ -1145,9 +1183,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/girlup-tiet.html'">
+                        <div class="scard">
                             <div class="scard-logo">
                                 <img src="assets/girluptiet.png" alt="">
                             </div>
@@ -1158,9 +1196,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/iaeste-ci-tiet.html'">
+                        <div class="scard">
                             <div class="scard-logo">
                                 <img src="assets/IAESTE.png" alt="">
                             </div>
@@ -1171,9 +1209,10 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/institutions-innovation-council-iic.html'">
+                        <div class="scard"
+                        ions-innovation-council-iic.html'">
                             <div class="scard-logo">
                                 <img src="assets/innovationcouncil.png" alt="">
                             </div>
@@ -1184,10 +1223,10 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
-                    
+
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/paryavaran-welfare-society.html'">
+                        <div class="scard"html'">
                             <div class="scard-logo">
                                 <img src="assets/paryawaran.png" alt="">
                             </div>
@@ -1198,9 +1237,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/pratigya-abhiyan.html'">
+                        <div class="scard">
                             <div class="scard-logo">
                                 <img src="assets/pratigya.png" alt="">
                             </div>
@@ -1211,9 +1250,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/rotaract-club-of-tiet.html'">
+                        <div class="scard"">
                             <div class="scard-logo">
                                 <img src="assets/rotaryclub.png" alt="">
                             </div>
@@ -1224,9 +1263,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/thapar-adventure-club.html'">
+                        <div class="scard"">
                             <div class="scard-logo">
                                 <img src="assets/adventure.png" alt="">
                             </div>
@@ -1237,9 +1276,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/youth-united-patiala-chapter.html'">
+                        <div class="scard"r.html'">
                             <div class="scard-logo">
                                 <img src="assets/youthunited.png" alt="">
                             </div>
@@ -1250,9 +1289,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/youth-welfare-club-ywc.html'">
+                        <div class="scard"'">
                             <div class="scard-logo">
                                 <img src="assets/ywc.png" alt="">
                             </div>
@@ -1263,15 +1302,15 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                 </div>
 
             </div>
             <div class="tab-pane fade" id="multi" role="tabpanel" aria-labelledby="multi-tab">
                 <div class="row">
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/echoes-club.html'">
+                        <div class="scard">
                             <div class="scard-logo">
                                 <img src="assets/echoes.png" alt="">
                             </div>
@@ -1282,9 +1321,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/econ-club.html'">
+                        <div class="scard">
                             <div class="scard-logo">
                                 <img src="assets/econ.png" alt="">
                             </div>
@@ -1295,9 +1334,10 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/student-alumni-interaction-cell-saic.html'">
+                        <div class="scard"
+                        alumni-interaction-cell-saic.html'">
                             <div class="scard-logo">
                                 <img src="assets/SAIC.png" alt="">
                             </div>
@@ -1308,9 +1348,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/tedx-tiet.html'">
+                        <div class="scard">
                             <div class="scard-logo">
                                 <img src="assets/tedx.png" alt="">
                             </div>
@@ -1321,9 +1361,10 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/thapar-amateur-astronomers-society-taas.html'">
+                        <div class="scard"
+                        mateur-astronomers-society-taas.html'">
                             <div class="scard-logo">
                                 <img src="assets/astronomy.png" alt="">
                             </div>
@@ -1334,9 +1375,9 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-lg-4 p-2 col-md-6">
-                        <div class="scard" onclick="window.location='/core/static/thapar-toastmasters-club.html'">
+                        <div class="scard"ml'">
                             <div class="scard-logo">
                                 <img src="assets/toastmasters.png" alt="">
                             </div>
@@ -1347,10 +1388,11 @@
                             <a class="ml-auto pr-3 scard-open"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    
+
                 </div>
 
             </div>
+            
         </div>
         <div class="container-fluid">
 
@@ -1360,13 +1402,13 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-    </script>
+        </script>
 </body>
 
 </html>

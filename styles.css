@@ -1,7 +1,9 @@
 :root {
     --card-color: rgb(8, 5, 22);
   }
-
+.alert{
+    border-radius: 0;
+}
 *{
     font-family: Roboto;
     padding: 0;
